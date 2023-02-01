@@ -2,57 +2,64 @@ from time import sleep
 from Libraries.numeric_check import isint
 
 
-gender = []
-age = []
-name = []
-oldestm = 0
-oldestmname = ''
-youngf = 0
+people = []
 for i in range(4):
     print(f'-----[{i + 1}º Pessoa]-----')
     print(f'[@] Qual o seu nome?')
-    name.insert(i, input(f'>>> '))
+    name = input(f'>>> ')
     print(f'[@] Qual a sua idade?')
     while True:
-        age.insert(i, input(f'>>> '))
-        if isint(age[i]):
-            age[i] = int(age[i])
+        age = input(f'>>> ')
+        if isint(age):
+            age = int(age)
             break
         else:
-            print(f'[@] \033[1;31m"{age[i]}" não é válido!\033[m')
-            age.pop(i)
+            print(f'[@] \033[1;31m"{age}" não é válido!\033[m')
     print(f'[@] Qual seu gênero?\n'
           f'[1]: Masculino\n'
           f'[2]: Feminino\n'
           f'[3]: Outro')
     while True:
-        gender.insert(i, input(f'>>> '))
-        if isint(gender[i]):
-            gender[i] = int(gender[i])
-            if 1 <= gender[i] <= 3:
+        gender = input(f'>>> ')
+        if isint(gender):
+            gender = int(gender)
+            if 1 <= gender <= 3:
                 break
             else:
-                print(f'[@] "{gender[i]}" não está entre as opções!')
-                gender.pop(i)
+                print(f'[@] "{gender}" não está entre as opções!')
         else:
-            print(f'[@] \033[1;31m"{gender[i]}" não é válido!\033[m')
-            gender.pop(i)
-    if i == 0 and gender[i] == 1:
-        oldestm = age[i]
-        oldestmname = name[i]
-    if gender[i] == 1 and age[i] > oldestm:
-        oldestm = age[i]
-        oldestmname = name[i]
-    if gender[i] == 2 and age[i] < 20:
-        youngf += 1
+            print(f'[@] \033[1;31m"{gender}" não é válido!\033[m')
+    people.insert(i, dict(name=name, age=age, gender=gender))
 
-mediaage = sum(age) / len(age)
+mediaage = []
+for a in range(0, len(people)):
+    mediaage.insert(a, people[a]['age'])
+media = sum(mediaage) / len(mediaage)
+
+males = []
+for g in range(0, len(people)):
+    if people[g]['gender'] == 1:
+        males.insert(g, people[g])
+
+oldestm = males[0]['age']
+oldestmindex = 0
+for m in range(0, len(males)):
+    if males[m]['age'] > oldestm:
+        oldestm = males[m]['age']
+        oldestmindex = m
+
+youngf = 0
+for f in range(0, len(people)):
+    if people[f]['gender'] == 2:
+        if people[f]['age'] < 20:
+            youngf += 1
+
 print(f'[@] Analisando', end='')
 for o in range(3):
     print(f'.', end='')
     sleep(.5)
 print(f'.')
 print(f'[@] Aqui está o resultado:')
-print(f'[@] A média de idade do grupo é: {mediaage} anos\n'
-      f'[@] O homem mais velho é {oldestmname} com {oldestm} anos\n'
+print(f'[@] A média de idade do grupo é: {media} anos\n'
+      f'[@] O homem mais velho é {males[oldestmindex]["name"]} com {oldestm} anos\n'
       f'[@] Existem {youngf} mulheres com menos de 20 anos')
