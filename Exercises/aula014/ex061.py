@@ -15,7 +15,9 @@ for i in range(2):
             num.pop(i)
 
 print(f'[@] Aqui os 10 primeiros termos desa PA:')
-for n in range(1, 11):
+n = 1
+while n != 11:
     numberfinal = num[0] + (n - 1) * num[1]
     print(f'[{n:0>2}º]: {numberfinal}')
     sleep(.5)
+    n += 1
