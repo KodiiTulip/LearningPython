@@ -8,9 +8,8 @@ name = input(f'[@] Olá humano :)\n[@] Qual o seu nome? ')
 print(f'[@] {name}...')
 print(f'[@] Que belo nome, {name} :)')
 
-friend = input('[@] Por acaso você tem algum amigo especial que deseja mencionar? ')
-
 while True:
+    friend = input(f'[@] Tem mais alguem especial que deseja mencionar? ')
     if counter > 4:
         print(f'[@] Sinto muito, {name} :(\n[@] Mas chegamos ao meu limite.\n[@] Até a proxima vez! :)')
         exit()
@@ -37,4 +36,3 @@ while True:
     else:
         print(f'[@] {friend}?\n[@] Que nome bonito :)')
         counter += 1
-        friend = input(f'[@] Tem mais alguem especial que deseja mencionar? ')
