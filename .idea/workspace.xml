@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa49025b-de30-49ac-821d-85c8606a903d" name="Changes" comment="new exercises done" />
+    <list default="true" id="aa49025b-de30-49ac-821d-85c8606a903d" name="Changes" comment="aula016 exercises done">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -138,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675952227980</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="aula016 exercises done">
+      <created>1676291731079</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1676291731079</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -171,6 +180,7 @@
     <MESSAGE value="updating some old files" />
     <MESSAGE value="updating some old files fixing some mistakes" />
     <MESSAGE value="new exercises done" />
-    <option name="LAST_COMMIT_MESSAGE" value="new exercises done" />
+    <MESSAGE value="aula016 exercises done" />
+    <option name="LAST_COMMIT_MESSAGE" value="aula016 exercises done" />
   </component>
 </project>
