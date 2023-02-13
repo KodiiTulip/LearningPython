@@ -1,0 +1,30 @@
+teams = ('a',
+         'b',
+         'c',
+         'd',
+         'e',
+         'f',
+         'g',
+         'h',
+         'i',
+         'j',
+         'k',
+         'l',
+         'm',
+         'n',
+         'o',
+         'p',
+         'q',
+         'r',
+         's',
+         't',
+         'u',
+         'v',
+         'w',
+         'x',
+         'y',
+         'z')
+print(f'[@] Os 5 primeiros times são: {teams[:5]}\n'
+      f'[@] Os últimos 4 colocados: {teams[-4:]}\n'
+      f'[@] Times em ordem alfabética: {sorted(teams)}\n'
+      f'[@] O time C está em {teams.index("c") + 1}º lugar.')
