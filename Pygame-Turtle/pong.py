@@ -116,11 +116,11 @@ while True:
     # border check
     if ball.ycor() > (wn.window_height() / 2) - 10:
         ball.sety((wn.window_height() / 2) - 10)
-        winsound.PlaySound('bounce', winsound.SND_ASYNC)
+        winsound.PlaySound('sounds\\bounce', winsound.SND_ASYNC)
         ball.dy *= -1
     elif ball.ycor() < -(wn.window_height() / 2) + 10:
         ball.sety(-(wn.window_height() / 2) + 10)
-        winsound.PlaySound('bounce', winsound.SND_ASYNC)
+        winsound.PlaySound('sounds\\bounce', winsound.SND_ASYNC)
         ball.dy *= -1
     elif ball.xcor() > (wn.window_width() / 2) - 10:
         ball.goto(0, 0)
@@ -144,5 +144,5 @@ while True:
 
     # paddle ball collision
     if bpdB_yCol() or bpdA_yCol():
-        winsound.PlaySound('bounce', winsound.SND_ASYNC)
+        winsound.PlaySound('sounds\\bounce', winsound.SND_ASYNC)
         ball.dx *= -1
