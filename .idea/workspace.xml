@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa49025b-de30-49ac-821d-85c8606a903d" name="Changes" comment="tkinter testing plus making simple calculator" />
+    <list default="true" id="aa49025b-de30-49ac-821d-85c8606a903d" name="Changes" comment="Pong game with turtle&#10;last commit had the wrongdescription">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -59,6 +61,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
@@ -70,6 +73,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\carlo\OneDrive\Documentos\Learning Phython\Pygame-Turtle\sounds" />
+      <recent name="C:\Users\carlo\OneDrive\Documentos\Learning Phython\Pygame-Turtle" />
       <recent name="C:\Users\carlo\OneDrive\Documentos\Learning Phython\Exercises\aula015" />
     </key>
   </component>
@@ -159,7 +164,21 @@
       <option name="project" value="LOCAL" />
       <updated>1677243309141</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="tkinter testing plus making simple calculator">
+      <created>1677682333861</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1677682333861</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Pong game with turtle&#10;last commit had the wrongdescription">
+      <created>1677682460159</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1677682460160</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -186,6 +205,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" />
     <MESSAGE value="improving ex056 and messing around with dictionaries" />
     <MESSAGE value="improving ex051 and new exercises" />
@@ -195,6 +215,7 @@
     <MESSAGE value="aula016 exercises done" />
     <MESSAGE value="updating a file" />
     <MESSAGE value="tkinter testing plus making simple calculator" />
-    <option name="LAST_COMMIT_MESSAGE" value="tkinter testing plus making simple calculator" />
+    <MESSAGE value="Pong game with turtle&#10;last commit had the wrongdescription" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pong game with turtle&#10;last commit had the wrongdescription" />
   </component>
 </project>
